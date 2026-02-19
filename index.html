@@ -2,39 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework template</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header></header>
-  <main>
-    <section>
-      <div>
-        <h1>Homework template</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <ul>
-        <li><b>git status</b> - показує поточний стан вашого робочого дерева.</li>
-        <li><b>git branch</b> - Виводить список усіх локальних гілок.</li>
-        <li><b>git remote</b> - використовується для додавання віддаленого сховища до вашого локального сховища.</li>
-        <li><b>git add</b> - використовується для додавання файлів в область постановки.</li>
-        <li><b>git commit</b> - використовується для створення нового коміту.</li>
-        <li><b>git commit -m</b> - флаг m використовується щоб набрати текстове повідомлення</li>
-        <li><b>git push</b> - використовується для перенесення змін з вашого локального сховища у віддалений сховище.
-        </li>
-        <li><b>git push -u origin main</b> - використовується для переміщення поточної гілки у віддалений репозиторій.
-          Прапор -u
-          вказує Git'у встановити зв'язок відстеження між локальною гілкою і віддаленою гілкою.</li>
-        <li><b>git init</b> - використовується для ініціалізації нового сховища Git.</li>
-        <li><b>git checkout</b> - використовується для перемикання між гілками.</li>
-        <li><b>git checkout -b branch-name</b> - використовується для створення нової гілки та перемикання на неї.</li>
-      </ul>
-    </section>
-  </main>
-  <footer></footer>
+    <main>
+        <div class="box">
+
+            <div class="form_container">
+
+                <img class="close-icon" src="img/close_icon.svg" alt="">
+                <span class="log_reg">
+                    <span class="log-in">Login</span>
+                    <span class="stick">|</span>
+                    <span class="span_reg">Register</span>
+                </span>
+
+                <p class="form_suptitle">Enter your email and password to register.</p>
+
+                <form class="form">
+                    <input type="text" name="username" id="username" class="input" placeholder="Username">
+
+                    <input type="email" name="email" id="email" class="input" placeholder="Enter your email address">
+
+                    <input type="password" name="password" id="password" class="input" placeholder="Password">
+                    <img class="hide-pass" src="img/Hide.svg" alt="">
+
+                    <input type="password" name="password" id="confirm_password" class="input"
+                        placeholder="Confirm Password">
+
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+
+                <div class="or">
+                    <hr><span class="or_span">Or register with</span>
+                    <hr>
+                </div>
+
+                <div class="socials">
+                    <button type="button" class="social-btn"><img class="social-btn-img" src="img/google.svg"
+                            alt="">Continue with
+                        Google</button>
+                    <button type="button" class="social-btn"><img class="social-btn-img" src="img/facebook.svg"
+                            alt="">Continue with
+                        Facebook</button>
+                </div>
+
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
