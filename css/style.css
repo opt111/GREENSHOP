@@ -105,6 +105,7 @@ header {
 
 .wraper-info {
   max-width: 50%;
+  width: 100%;
   display: inline-block;
   padding: 91px 0px 85px 40px;
   vertical-align: top;
