@@ -5,66 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenShop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 
 <body>
-    <header>
-        <div class="container header-line">
-            <div class="header-info">
-                <a href="index.html"><img src="img/Logo.svg" alt="Logo" class="logo"></a>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <a href="#">
-                            <li class="nav-element active-nav-element">Home</li>
-                        </a><a href="#">
-                            <li class="nav-element">Shop</li>
-                        </a><a href="#">
-                            <li class="nav-element">Plant Care</li>
-                        </a><a href="#">
-                            <li class="nav-element">Blogs</li>
-                        </a>
-                    </ul>
-                </nav>
-                <div class="header-btns">
 
-                    <img src="img/search-icon.svg" alt="" class="search-icon">
-                    <img src="img/cart-icon.svg" alt="" class="cart-icon">
-
-                    <a href="#" class="lgn-btn"><img src="img/logging-btn-icon.png" alt="">Login</a>
-                </div>
-
-            </div>
-        </div>
-
-    </header>
     <main>
-        <section>
+        <section class="first_sect">
             <div class="container">
-                <div class="wraper">
-                    <div class="wraper-info">
-                        <h3 class="wraper-suptitle">Welcome to GreenShop</h3>
-                        <h1 class="wraper-title">
-                            Let’s Make a
-                            Better <span class="wraper-title-planet">Planet</span>
-                        </h1>
-                        <p class="wraper-text">
-                            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants
-                            to
-                            create an unique Urban Jungle. Order your favorite plants!
-                        </p>   
-                        <button class="wraper-btn"><a href="#" >SHOP NOW</a></button> 
+                <div class="content">
+                    <div class="left">
+                        <div class="wraper">
+                            <div>
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><a href="">House Plants</a></li>
+                                    <li><a href="">Potter Plants</a></li>
+                                    <li><a href="">Seeds</a></li>
+                                    <li><a href="">Small Plants</a></li>
+                                    <li><a href="">Big Plants</a></li>
+                                    <li><a href="">Succulents</a></li>
+                                    <li><a href="">Trerrariums</a></li>
+                                    <li><a href="">Gardening</a></li>
+                                    <li><a href="">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="img/super_sale_banner.png" alt="" class="sale_img">
+                            </div>
+                        </div>
+
                     </div>
-                    
-                    <img src="img/wraper-img.png" alt="plant" class="wraper-img">
+                    <div class="right">
+                        <div class="nav">
+                            <div>
+                                <ul class="nav_links">
+                                    <li class="active">All Plants</li>
+                                    <li>New Arrivals</li>
+                                    <li>Sale</li>
+                                </ul>
+                            </div>
+                            <div class="filter">
+                                <label for="sorting">Sort by:</label>
+                                <select name="Default sorting" id="sorting" class="select">
+                                    <option value="">Default sorting</option>
+                                    <option value="">Popular</option>
+                                    <option value="">Most viewed</option>
+                                    <option value="">Best rated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card_img"><img src="img/barbertondaisy.png" alt="" class="class_img"></div>
+                                <h3 class="card_title">Barberton Daisy</h3>
+                                <span class="card_price">$119.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/angelwingbegonia.png" alt="" class="class_img">
+                                </div>
+                                <h3 class="card_title">Angel Wing Begonia</h3>
+                                <span class="card_price">$169.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/africanviolet.png" alt="" class="class_img"></div>
+                                <h3 class="card_title">African Violet</h3>
+                                <span class="card_price">$199.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/beachspiderlily.png" alt="" class="class_img"></div>
+                                <h3 class="card_title">Beach Spider Lily</h3>
+                                <span class="card_price">$129.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/blushingbromeliad.png" alt="" class="class_img">
+                                </div>
+                                <h3 class="card_title">Blushing Bromeliad</h3>
+                                <span class="card_price">$139.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/aluminumplant.png" alt="" class="class_img"></div>
+                                <h3 class="card_title">Aluminum Plant</h3>
+                                <span class="card_price">$179.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/bird'snestfern.png" alt="" class="class_img"></div>
+                                <h3 class="card_title">Bird's Nest Fern</h3>
+                                <span class="card_price">$99.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/broadleafladypalm.png" alt="" class="class_img">
+                                </div>
+                                <h3 class="card_title">Broadleaf Lady Palm</h3>
+                                <span class="card_price">$59.00</span>
+                            </div>
+                            <div class="card">
+                                <div class="card_img"><img src="img/chineseevergreen.png" alt="" class="class_img">
+                                </div>
+                                <h3 class="card_title">Chinese Evergreen</h3>
+                                <span class="card_price">$39.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="pages">
+                    <div class="button btn-active"><a href="">1</a></div>
+                    <div class="button"><a href="">2</a></div>
+                    <div class="button"><a href="">3</a></div>
+                    <div class="button"><a href="">4</a></div>
+                    <div class="button"><a href=""><img src="img/arrowright.svg" alt=""></a></div>
                 </div>
             </div>
+
         </section>
     </main>
 </body>
