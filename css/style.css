@@ -158,8 +158,5 @@ li:not(:last-of-type) {
 
 .btn-active {
   background-color: #46A358;
-}
-
-.btn-active a {
   color: #ffffff;
 }
