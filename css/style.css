@@ -438,14 +438,14 @@ body {
   line-height: 16px;
   border: none;
   gap: 3px;
-  background-image: url('/img/readmore_arrowright.svg');
+  background-image: url('../img/readmore_arrowright.svg');
   background-repeat: no-repeat;
   background-position: 73px 2px;
 }
 
 .post_card_btn:hover {
   color: #46A358;
-  background-image: url('/img/readmore_arrowright_active.svg');
+  background-image: url('../img/readmore_arrowright_active.svg');
   background-repeat: no-repeat;
   background-position: 73px 2px;
 }
