@@ -1,0 +1,45 @@
+:root {
+  --font-family: 'Cera Pro', sans-serif;
+  --basic-font-weight: 400;;
+  --container-width: 1200px;
+  --basic-text-color: #3D3D3D;
+  --basic-font-size: 15px;
+}
+
+html {
+  font-family: var(--font-family);
+  font-weight: var(--basic-font-weight);
+  color: var(--basic-text-color);
+  font-size: var(--basic-font-size);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
