@@ -2,71 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenShop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenShop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 
 <body>
-    <header>
-        <div class="container header-line">
-            <div class="header-info">
-                <a href="index.html"><img src="img/Logo.svg" alt="Logo" class="logo"></a>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <a href="#">
-                            <li class="nav-element active-nav-element">Home</li>
-                        </a><a href="#">
-                            <li class="nav-element">Shop</li>
-                        </a><a href="#">
-                            <li class="nav-element">Plant Care</li>
-                        </a><a href="#">
-                            <li class="nav-element">Blogs</li>
-                        </a>
+  <header>
+    <div class="container header-line">
+      <div class="header-info">
+        <a href="index.html"><img src="img/Logo.svg" alt="Logo" class="logo"></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <a href="#">
+              <li class="nav-element"><a href="#" class="nav-item">Home</a></li>
+            </a>
+
+            <a href="#">
+              <li class="nav-element"><a href="#" class="nav-item">Shop</a></li>
+            </a>
+
+            <a href="#">
+              <li class="nav-element parent">
+                <a href="#" class="nav-item">Plant Care</a>
+                <ul class="nav-element child">
+                  <li class="nav-element"><a href="#">Drainage</a></li>
+                  <li class="nav-element"><a href="#">Fungicides</a></li>
+                  <li class="nav-element"><a href="#">Fertilizer</a></li>
+                  <li class="nav-element parent">
+                    <a href="#">Priming</a>
+                    <ul class="nav-element child">
+                      <li class="nav-element"><a href="#">Universal</a></li>
+                      <li class="nav-element"><a href="#">For Ficus</a></li>
+                      <li class="nav-element"><a href="#">For Cacti</a></li>
+                      <li class="nav-element"><a href="#">For Citrus</a></li>
+                      <li class="nav-element"><a href="#">For those in bloom</a></li>
+                      <li class="nav-element"><a href="#">For Orchids</a></li>
+
                     </ul>
-                </nav>
-                <div class="header-btns">
+                  </li>
+                </ul>
+              </li>
+            </a><a href="#">
+              <li class="nav-element"><a href="#" class="nav-item">Blogs</a></li>
+            </a>
+          </ul>
+        </nav>
+        <div class="header-btns">
 
-                    <img src="img/search-icon.svg" alt="" class="search-icon">
-                    <img src="img/cart-icon.svg" alt="" class="cart-icon">
+          <img src="img/search-icon.svg" alt="" class="search-icon">
+          <img src="img/cart-icon.svg" alt="" class="cart-icon">
 
-                    <a href="#" class="lgn-btn"><img src="img/logging-btn-icon.png" alt="">Login</a>
-                </div>
-
-            </div>
+          <a href="#" class="lgn-btn"><img src="img/logging-btn-icon.png" alt="">Login</a>
         </div>
 
-    </header>
-    <main>
-        <section>
-            <div class="container">
-                <div class="wraper">
-                    <div class="wraper-info">
-                        <h3 class="wraper-suptitle">Welcome to GreenShop</h3>
-                        <h1 class="wraper-title">
-                            Let’s Make a
-                            Better <span class="wraper-title-planet">Planet</span>
-                        </h1>
-                        <p class="wraper-text">
-                            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants
-                            to
-                            create an unique Urban Jungle. Order your favorite plants!
-                        </p>   
-                        <button class="wraper-btn"><a href="#" >SHOP NOW</a></button> 
-                    </div>
-                    
-                    <img src="img/wraper-img.png" alt="plant" class="wraper-img">
-                </div>
-            </div>
-        </section>
-    </main>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="wraper">
+          <div class="wraper-info">
+            <h3 class="wraper-suptitle">Welcome to GreenShop</h3>
+            <h1 class="wraper-title">
+              Let’s Make a
+              Better <span class="wraper-title-planet">Planet</span>
+            </h1>
+            <p class="wraper-text">
+              We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants
+              to
+              create an unique Urban Jungle. Order your favorite plants!
+            </p>
+            <button class="wraper-btn"><a href="#">SHOP NOW</a></button>
+          </div>
+
+          <img src="img/wraper-img.png" alt="plant" class="wraper-img">
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
