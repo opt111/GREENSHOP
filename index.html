@@ -17,13 +17,36 @@
         <nav class="nav">
           <ul class="nav-list">
             <a href="#">
-              <li class="nav-element active-nav-element">Home</li>
+              <li class="nav-element"><a href="#" class="nav-item">Home</a></li>
+            </a>
+
+            <a href="#">
+              <li class="nav-element"><a href="#" class="nav-item">Shop</a></li>
+            </a>
+
+            <a href="#">
+              <li class="nav-element parent">
+                <a href="#" class="nav-item">Plant Care</a>
+                <ul class="nav-element child">
+                  <li class="nav-element"><a href="#">Drainage</a></li>
+                  <li class="nav-element"><a href="#">Fungicides</a></li>
+                  <li class="nav-element"><a href="#">Fertilizer</a></li>
+                  <li class="nav-element parent">
+                    <a href="#">Priming</a>
+                    <ul class="nav-element child">
+                      <li class="nav-element"><a href="#">Universal</a></li>
+                      <li class="nav-element"><a href="#">For Ficus</a></li>
+                      <li class="nav-element"><a href="#">For Cacti</a></li>
+                      <li class="nav-element"><a href="#">For Citrus</a></li>
+                      <li class="nav-element"><a href="#">For those in bloom</a></li>
+                      <li class="nav-element"><a href="#">For Orchids</a></li>
+
+                    </ul>
+                  </li>
+                </ul>
+              </li>
             </a><a href="#">
-              <li class="nav-element">Shop</li>
-            </a><a href="#">
-              <li class="nav-element">Plant Care</li>
-            </a><a href="#">
-              <li class="nav-element">Blogs</li>
+              <li class="nav-element"><a href="#" class="nav-item">Blogs</a></li>
             </a>
           </ul>
         </nav>
@@ -32,7 +55,7 @@
           <img src="img/search-icon.svg" alt="" class="search-icon">
           <img src="img/cart-icon.svg" alt="" class="cart-icon">
 
-          <a href="#" class="lgn-btn"><img src="img/logging-btn-icon.png" alt="">Login</a>
+          <a href="register.html" class="lgn-btn"><img src="img/logging-btn-icon.png" alt="">Login</a>
         </div>
 
       </div>
@@ -81,7 +104,7 @@
                   </ul>
                 </div>
                 <div>
-                  <img src="img/super_sale_banner.png" alt="" class="sale_img">
+                  <a href="index.html"><img src="img/super_sale_banner.png" alt="" class="sale_img"></a>
                 </div>
               </div>
 
@@ -90,7 +113,7 @@
               <div class="right-nav">
                 <div>
                   <ul class="nav_links">
-                    <li ><a href="" class="active">All Plants</a></li>
+                    <li><a href="" class="active">All Plants</a></li>
                     <li><a href="">New Arrivals</a></li>
                     <li><a href="">Sale</a></li>
                   </ul>
@@ -107,54 +130,146 @@
               </div>
               <div class="cards">
                 <div class="card">
-                  <div class="card_img"><img src="img/barbertondaisy.png" alt="" class="class_img"></div>
-                  <h3 class="card_title">Barberton Daisy</h3>
-                  <span class="card_price">$119.00</span>
-                </div>
-                <div class="card">
-                  <div class="card_img"><img src="img/angelwingbegonia.png" alt="" class="class_img">
+                  <div class="card_img">
+                    <img src="img/barbertondaisy.png" alt="" class="class_img">
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
+                    
                   </div>
+                  <h3 class="card_title">Barberton Daisy</h3>
+                    <span class="card_price">$119.00</span>
+                </div>
+
+                <div class="card">
+
+                  <div class="card_img">
+
+                    <img src="img/angelwingbegonia.png" alt="" class="class_img">
+
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
+
+                  </div>
+
                   <h3 class="card_title">Angel Wing Begonia</h3>
                   <span class="card_price">$169.00</span>
                 </div>
+
                 <div class="card">
-                  <div class="card_img"><img src="img/africanviolet.png" alt="" class="class_img"></div>
+                  <div class="card_img">
+
+                    <div class="off">
+                      <span>13% OFF</span>
+                    </div>
+
+                    <img src="img/africanviolet.png" alt="" class="class_img">
+
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
+
+                  </div>
+
                   <h3 class="card_title">African Violet</h3>
-                  <span class="card_price">$199.00</span>
+
+                  <div class="card_prices">
+                    <span class="card_price">$199.00</span>
+                    <span class="old_card_price">$229.00</span>
+                  </div>
+
                 </div>
+
+
+
                 <div class="card">
-                  <div class="card_img"><img src="img/beachspiderlily.png" alt="" class="class_img"></div>
+
+                  <div class="card_img">
+
+                    <img src="img/beachspiderlily.png" alt="" class="class_img">
+
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
+                  </div>
+
                   <h3 class="card_title">Beach Spider Lily</h3>
                   <span class="card_price">$129.00</span>
+
                 </div>
+
                 <div class="card">
                   <div class="card_img"><img src="img/blushingbromeliad.png" alt="" class="class_img">
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
                   </div>
                   <h3 class="card_title">Blushing Bromeliad</h3>
                   <span class="card_price">$139.00</span>
                 </div>
+
                 <div class="card">
-                  <div class="card_img"><img src="img/aluminumplant.png" alt="" class="class_img"></div>
+                  <div class="card_img"><img src="img/aluminumplant.png" alt="" class="class_img">
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
+                  </div>
                   <h3 class="card_title">Aluminum Plant</h3>
                   <span class="card_price">$179.00</span>
                 </div>
+
                 <div class="card">
-                  <div class="card_img"><img src="img/bird'snestfern.png" alt="" class="class_img"></div>
+                  <div class="card_img">
+                    <img src="img/bird'snestfern.png" alt="" class="class_img">
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
+                  </div>
                   <h3 class="card_title">Bird's Nest Fern</h3>
                   <span class="card_price">$99.00</span>
                 </div>
+
                 <div class="card">
-                  <div class="card_img"><img src="img/broadleafladypalm.png" alt="" class="class_img">
+                  <div class="card_img">
+                    <img src="img/broadleafladypalm.png" alt="" class="class_img">
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
                   </div>
                   <h3 class="card_title">Broadleaf Lady Palm</h3>
                   <span class="card_price">$59.00</span>
                 </div>
+
                 <div class="card">
-                  <div class="card_img"><img src="img/chineseevergreen.png" alt="" class="class_img">
+                  <div class="card_img">
+                    <img src="img/chineseevergreen.png" alt="" class="class_img">
+                    <div class="icons">
+                      <img src="img/shopping.svg" alt="" class="icon">
+                      <img src="img/heart.svg" alt="" class="icon">
+                      <img src="img/find.svg" alt="" class="icon">
+                    </div>
                   </div>
                   <h3 class="card_title">Chinese Evergreen</h3>
                   <span class="card_price">$39.00</span>
                 </div>
+
               </div>
 
             </div>
@@ -206,9 +321,9 @@
             <div class="posts_upper">
               <h2 class="posts_title">Our Blog Posts</h2>
               <p class="posts_description">We are an online plant shop offering a wide range of cheap and trendy plants.
-            </p>
-              </div>
-            
+              </p>
+            </div>
+
 
             <div class="posts_cards">
               <div class="posts_cards_container">
@@ -270,8 +385,147 @@
 
       </div>
     </section>
+
+     <section>
+      <div class="container">
+        <div class="first-sect">
+          <div class="cards">
+
+            <div class="card">
+              <img src="img/card1.svg" alt="" class="card-img">
+              <h3 class="card-title">Garden Care</h3>
+              <p class="card-description">We are an online plant shop offering a wide range of cheap and trendy plants.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="img/card2.svg" alt="" class="card-img">
+              <h3 class="card-title">Plant Renovation</h3>
+              <p class="card-description">We are an online plant shop offering a wide range of cheap and trendy plants.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="img/card3.svg" alt="" class="card-img">
+              <h3 class="card-title">Watering Graden</h3>
+              <p class="card-description">We are an online plant shop offering a wide range of cheap and trendy plants.
+              </p>
+            </div>
+
+          </div>
+          <div class="form">
+            <h3 class="form-title">Would you like to join newsletters?</h3>
+            <div class="input">
+              <input type="email" class="email-input" placeholder="enter your email address...">
+              <button type="email" class="email-btn">Join</button>
+            </div>
+            <p class="form-description">We usually post offers and challenges in newsletter. We’re your online
+              houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our
+              (green)house to yours! </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-two">
+      <div class="container-two">
+        <div class="section-two-content">
+          <img src="img/logo.svg" alt="" class="logo">
+
+          <div class="location">
+            <img src="img/Location.svg" alt="" class="location-img">
+            <p class="address">70 West Buckingham Ave.
+              Farmingdale, NY 11735</p>
+          </div>
+
+          <div class="email-s">
+            <img src="img/Message.svg" alt="" class="email-img">
+            <p class="email"><a href="mailto:contact@greenshop.com">contact@greenshop.com</a></p>
+          </div>
+
+          <div class="phone">
+            <img src="img/phone-icon.svg" alt="" class="phone-img">
+            <p class="number"><a href="tel:+88 01911 717 490">+88 01911 717 490</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+
+<footer class="footer">
+    <div class="container-two">
+      <div class="footer-content">
+        <div class="footer-left">
+
+          <div class="account">
+            <h3 class="account-title">My Account</h3>
+            <ul class="account-list">
+              <li class="account-list-item"><a href="#">My Account</a></li>
+              <li class="account-list-item"><a href="#">Our stores
+                </a></li>
+              <li class="account-list-item"><a href="#">Contact us
+                </a></li>
+              <li class="account-list-item"><a href="#">Career
+                </a></li>
+              <li class="account-list-item"><a href="#">Specials</a></li>
+            </ul>
+          </div>
+
+          <div class="help">
+            <h3 class="help-title">Help & Guide</h3>
+            <ul class="help-list">
+              <li class="help-list-item"><a href="#">Help Center</a>
+              </li>
+              <li class="help-list-item"><a href="#">How to Buy</a>
+              </li>
+              <li class="help-list-item"><a href="#">Shipping & Delivery</a>
+              </li>
+              <li class="help-list-item"><a href="#">Product Policy</a>
+              </li>
+              <li class="help-list-item"><a href="#">How to Return</a></li>
+            </ul>
+          </div>
+
+          <div class="categories">
+            <h3 class="categories-title">Categories</h3>
+            <ul class="categories-list">
+              <li class="categories-list-item"><a href="#">House Plants</a>
+              </li>
+              <li class="categories-list-item"><a href="#">Potter Plants</a>
+              </li>
+              <li class="categories-list-item"><a href="#">Seeds</a>
+              </li>
+              <li class="categories-list-item"><a href="#">Small Plants</a>
+              </li>
+              <li class="categories-list-item"><a href="#">Accessories</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="social">
+            <h3 class="social-title">Social Media</h3>
+            <div class="social-icons">
+              <a href="#"><img src="img/Facebook.svg" alt="" class="social-icons-fb social-icon"></a>
+              <a href="#"><img src="img/Instagram.svg" alt="" class="social-icons-ins social-icon"></a>
+              <a href="#"><img src="img/Twitter.svg" alt="" class="social-icons-tw social-icon"></a>
+              <a href="#"><img src="img/Linkidin.svg" alt="" class="social-icons-in social-icon"></a>
+              <a href="#"><img src="images/Youtube.svg" alt="" class="social-icons-yt social-icon"></a>
+            </div>
+          </div>
+          <div class="accept">
+            <h3 class="accept-title">We accept</h3>
+            <img src="img/accept-img.png" alt="" class="accept-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="rights">
+    <div class="container-two">
+      <span class="right">© 2021 GreenShop. All Rights Reserved.</span>
+    </div>
+  </div>
 </body>
 
 </html>
