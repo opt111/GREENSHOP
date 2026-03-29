@@ -5,56 +5,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homework template</title>
-  <link rel="stylesheet" href="css/style.css">
+
   <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
 </head>
 
-<body>
+<body class="body">
   <header>
     <div class="container header-line">
       <div class="header-info">
         <a href="index.html"><img src="img/logo.svg" alt="Logo" class="logo"></a>
         <nav class="nav">
-          <ul class="nav-list">
-            <a href="#">
-              <li class="nav-element"><a href="#" class="nav-item">Home</a></li>
-            </a>
 
-            <a href="#">
-              <li class="nav-element"><a href="#" class="nav-item">Shop</a></li>
-            </a>
+          <ul>
+            <div class="nav-list">
+              <a href="#">
+                <li class="nav-element"><a href="#" class="nav-item">Home</a></li>
+              </a>
 
-            <a href="#">
-              <li class="nav-element parent">
-                <a href="#" class="nav-item">Plant Care</a>
-                <ul class="nav-element child">
-                  <li class="nav-element"><a href="#">Drainage</a></li>
-                  <li class="nav-element"><a href="#">Fungicides</a></li>
-                  <li class="nav-element"><a href="#">Fertilizer</a></li>
-                  <li class="nav-element parent">
-                    <a href="#">Priming</a>
-                    <ul class="nav-element child">
-                      <li class="nav-element"><a href="#">Universal</a></li>
-                      <li class="nav-element"><a href="#">For Ficus</a></li>
-                      <li class="nav-element"><a href="#">For Cacti</a></li>
-                      <li class="nav-element"><a href="#">For Citrus</a></li>
-                      <li class="nav-element"><a href="#">For those in bloom</a></li>
-                      <li class="nav-element"><a href="#">For Orchids</a></li>
+              <a href="#">
+                <li class="nav-element"><a href="#" class="nav-item">Shop</a></li>
+              </a>
 
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </a><a href="#">
-              <li class="nav-element"><a href="#" class="nav-item">Blogs</a></li>
-            </a>
+              <a href="#">
+                <li class="nav-element parent">
+                  <a href="#" class="nav-item">Plant Care</a>
+                  <ul class="nav-element child">
+                    <li class="nav-element"><a href="#">Drainage</a></li>
+                    <li class="nav-element"><a href="#">Fungicides</a></li>
+                    <li class="nav-element"><a href="#">Fertilizer</a></li>
+                    <li class="nav-element parent">
+                      <a href="#">Priming</a>
+                      <ul class="nav-element child">
+                        <li class="nav-element"><a href="#">Universal</a></li>
+                        <li class="nav-element"><a href="#">For Ficus</a></li>
+                        <li class="nav-element"><a href="#">For Cacti</a></li>
+                        <li class="nav-element"><a href="#">For Citrus</a></li>
+                        <li class="nav-element"><a href="#">For those in bloom</a></li>
+                        <li class="nav-element"><a href="#">For Orchids</a></li>
+
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </a><a href="#">
+                <li class="nav-element"><a href="#" class="nav-item">Blogs</a></li>
+              </a>
+
+            </div>
+
           </ul>
         </nav>
         <div class="header-btns">
 
           <img src="img/search-icon.svg" alt="" class="search-icon">
           <img src="img/cart-icon.svg" alt="" class="cart-icon">
-
+          <img src="img/burger-menu-svgrepo-com.svg" alt="" class="burger-menu">
+          <img src="img/icons8-close.svg" alt="" class="burger-close-menu" id="burger-close-menu">
           <a href="register.html" class="lgn-btn"><img src="img/logging-btn-icon.png" alt="">Login</a>
         </div>
 
@@ -88,7 +97,7 @@
         <div class="content">
           <div class="content-info">
             <div class="left">
-              <div class="wraper-sale">
+              <div class="wraper-sale" id="wraper-sale">
                 <div>
                   <h3>Categories</h3>
                   <ul>
@@ -111,6 +120,7 @@
             </div>
             <div class="right">
               <div class="right-nav">
+                <button class="side-button" id="side-button">Categories</button>
                 <div>
                   <ul class="nav_links">
                     <li><a href="" class="active">All Plants</a></li>
@@ -137,10 +147,10 @@
                       <img src="img/heart.svg" alt="" class="icon">
                       <img src="img/find.svg" alt="" class="icon">
                     </div>
-                    
+
                   </div>
                   <h3 class="card_title">Barberton Daisy</h3>
-                    <span class="card_price">$119.00</span>
+                  <span class="card_price">$119.00</span>
                 </div>
 
                 <div class="card">
@@ -386,28 +396,28 @@
       </div>
     </section>
 
-     <section>
+    <section>
       <div class="container">
         <div class="first-sect">
-          <div class="cards">
+          <div class="cards-bot">
 
-            <div class="card">
-              <img src="img/card1.svg" alt="" class="card-img">
-              <h3 class="card-title">Garden Care</h3>
+            <div class="card-bot">
+              <img src="img/card1.svg" alt="" class="card-bot-img">
+              <h3 class="card-bot-title">Garden Care</h3>
               <p class="card-description">We are an online plant shop offering a wide range of cheap and trendy plants.
               </p>
             </div>
 
-            <div class="card">
-              <img src="img/card2.svg" alt="" class="card-img">
-              <h3 class="card-title">Plant Renovation</h3>
+            <div class="card-bot">
+              <img src="img/card2.svg" alt="" class="card-bot-img">
+              <h3 class="card-bot-title">Plant Renovation</h3>
               <p class="card-description">We are an online plant shop offering a wide range of cheap and trendy plants.
               </p>
             </div>
 
-            <div class="card">
-              <img src="img/card3.svg" alt="" class="card-img">
-              <h3 class="card-title">Watering Graden</h3>
+            <div class="card-bot">
+              <img src="img/card3.svg" alt="" class="card-bot-img">
+              <h3 class="card-bot-title">Watering Graden</h3>
               <p class="card-description">We are an online plant shop offering a wide range of cheap and trendy plants.
               </p>
             </div>
@@ -434,8 +444,9 @@
 
           <div class="location">
             <img src="img/Location.svg" alt="" class="location-img">
-            <p class="address">70 West Buckingham Ave.
-              Farmingdale, NY 11735</p>
+            <p class="address"><a href="https://maps.app.goo.gl/19HPF9MEvSbvQBGp7" target="_blank">70 West Buckingham
+                Ave.
+                Farmingdale, NY 11735</a></p>
           </div>
 
           <div class="email-s">
@@ -453,7 +464,7 @@
   </main>
 
 
-<footer class="footer">
+  <footer class="footer">
     <div class="container-two">
       <div class="footer-content">
         <div class="footer-left">
@@ -526,6 +537,7 @@
       <span class="right">© 2021 GreenShop. All Rights Reserved.</span>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

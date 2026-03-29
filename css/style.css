@@ -14,6 +14,14 @@ html {
   font-size: var(--basic-font-size);
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* Remove default body margins */
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,27 +73,40 @@ body {
 }
 
 .nav-list {
-  display: flex;
-  gap: 25px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
   top: 9px;
   left: 29%;
 
 }
-
+.burger-close-menu {
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    display: block;
+  }
 .nav-item {
   font-family: Cera Pro;
   font-weight: 400;
   font-size: 16px;
   color: #3D3D3D;
   padding-bottom: 24px;
-  border-bottom: solid 0 transparent
+  border-bottom: solid 0 transparent;
+
 }
 
 .nav-item:hover {
+
   border-bottom: solid 3px rgba(70, 163, 88, 1);
   text-shadow: 1px 0px 0px currentColor;
 
+}
+
+.nav-item {
+  background-color: white;
+  display: inline-block;
 }
 
 .parent {
@@ -121,11 +142,6 @@ li:has(ul):not(:has(.nav-item)):hover::after {
 .nav-list>.parent>.child {
   top: 100%;
   left: 0;
-}
-
-.nav-item {
-  background-color: white;
-  display: inline-block;
 }
 
 .child>.nav-element {
@@ -279,8 +295,10 @@ li:has(ul):not(:has(.nav-item)):hover::after {
   padding-left: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+
 }
+
 
 .wraper-sale h3 {
   margin-bottom: 10px;
@@ -328,8 +346,26 @@ li:has(ul):not(:has(.nav-item)):hover::after {
 
 .right-nav {
   display: flex;
-  gap: 400px;
+  width: 100%;
+  justify-content: space-between;
   margin-bottom: 31px;
+  align-items: center;
+}
+
+.side-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: var(--basic-font-weight);
+  color: var(--basic-text-color);
+  font-size: 16px;
+  transition: all 0.2s linear;
+}
+
+.side-button:hover {
+  cursor: pointer;
+  color: #46A358;
 }
 
 .nav_links {
@@ -363,14 +399,16 @@ li:has(ul):not(:has(.nav-item)):hover::after {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  --card-columns: 3;
+
+  display: grid;
+  grid-template-columns: repeat(var(--card-columns), 1fr);
   gap: 33px;
 
 }
 
 .card_img {
-  min-width: 258px;
+  min-width: 100%;
   min-height: 300px;
   background-color: var(--basic-background-color);
   text-align: center;
@@ -445,8 +483,8 @@ li:has(ul):not(:has(.nav-item)):hover::after {
 }
 
 .class_img {
-  max-width: 250px;
-  max-height: 250px;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 .icon path {
@@ -592,7 +630,8 @@ path:hover {
 }
 
 .posts_cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   margin-bottom: 68px;
 }
@@ -658,13 +697,13 @@ path:hover {
   padding: 24px 25px;
   justify-content: space-between;
 
-  .cards {
+  .cards-bot {
     display: flex;
     justify-content: space-between;
     gap: 60px;
     position: relative;
 
-    .card::after {
+    .card-bot::after {
       content: '';
       border-right: 1px solid rgba(70, 163, 88, 0.05);
       position: absolute;
@@ -673,7 +712,7 @@ path:hover {
       height: 100%;
     }
 
-    .card::before {
+    .card-bot::before {
       content: '';
       border-right: 1px solid rgba(70, 163, 88, 0.05);
       position: absolute;
@@ -682,7 +721,7 @@ path:hover {
       height: 100%;
     }
 
-    .card {
+    .card-bot {
       max-width: 204px;
     }
 
@@ -802,16 +841,18 @@ path:hover {
       margin: auto;
     }
 
-    .address {
+    .address a {
       max-width: 178px;
       transition: all 0.1s linear;
     }
 
-    .address:hover {
+    .address:hover a {
       color: #46A358;
       cursor: pointer;
     }
   }
+
+
 
   .email-s {
     display: flex;
@@ -921,4 +962,27 @@ path:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 13px;
+}
+
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-close-menu {
+  display: none;
+}
+
+.block {
+  display: block;
+  opacity: 1;
+  
+}
+
+.none {
+  display: none;
 }
