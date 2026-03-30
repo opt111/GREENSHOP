@@ -986,3 +986,21 @@ path:hover {
 .none {
   display: none;
 }
+
+.lgn-btn-menu {
+  display: none;
+  gap: 4px;
+  background-color: #46A358;
+  border-radius: 6px;
+  padding: 8px 18px;
+  color: white;
+  font-family: Cera pro, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s linear;
+  font-size: 30px;
+}
+
+.lgn-btn-menu:hover {
+  background-color: #326f3e;
+}

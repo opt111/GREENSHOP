@@ -277,6 +277,10 @@
     display: none;
   }
 
+  .lgn-btn-menu {
+    display: flex;
+  }
+
   .wraper-img {
     display: none;
   }
