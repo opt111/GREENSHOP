@@ -363,13 +363,18 @@
 }
 
 @media (max-width:460px) {
-.wraper-title {
-  font-size: 36px;
-}
 
-.wraper-info {
-  padding-left: 10px;
-}
+  :root {
+    --container-width: 400px;
+  }
+
+  .wraper-title {
+    font-size: 36px;
+  }
+
+  .wraper-info {
+    padding-left: 10px;
+  }
 
   .find-more-card {
     padding-left: 30px;
@@ -391,7 +396,9 @@
 }
 
 @media (max-width:380px) {
-
+  :root {
+    --container-width: 350px;
+  }
 }
 
 @media (min-width:769px) {
