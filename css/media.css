@@ -163,7 +163,7 @@
   :root {
     --container-width: 750px;
   }
-  
+
 
   .posts_cards {
     grid-template-columns: repeat(1, 1fr);
@@ -255,6 +255,7 @@
     justify-content: center;
     transform: translateY(-100%);
     transition: all 0.5s linear;
+
   }
 
   .open {
@@ -263,6 +264,8 @@
 
   .nav-item {
     background-color: #d5d5d5;
+    font-size: 30px;
+    font-weight: 500;
   }
 
   .nav-item:hover {
@@ -330,6 +333,7 @@
 
   .burger-close-menu {
     right: 26px;
+    right: 0;
   }
 
   .wraper-sale {
@@ -343,19 +347,51 @@
   }
 
   .right-nav {
-    flex-direction: row;
-    gap: 5px;
+    flex-direction: column;
+    gap: 25px;
+    align-items: left;
   }
 
   .nav_links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
-    align-items: center;
   }
 
   .wraper-sale {
     top: 65px;
   }
+}
+
+@media (max-width:460px) {
+.wraper-title {
+  font-size: 36px;
+}
+
+.wraper-info {
+  padding-left: 10px;
+}
+
+  .find-more-card {
+    padding-left: 30px;
+  }
+
+  .find-more-card-right {
+    max-width: 100%;
+    justify-content: start;
+    text-align: left;
+  }
+
+  .find-more-btn {
+    margin: 0;
+  }
+
+  .find-more-img {
+    display: none;
+  }
+}
+
+@media (max-width:380px) {
+
 }
 
 @media (min-width:769px) {
